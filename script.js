@@ -41,6 +41,8 @@
       requestAnimationFrame(function () { overlay.classList.add('open'); });
       toggle.setAttribute('aria-expanded', 'true');
       toggle.setAttribute('aria-label', 'Menü schließen');
+      // Ensure links are clickable
+      links.style.pointerEvents = 'auto';
     }
     function closeMenu() {
       links.classList.remove('open');
