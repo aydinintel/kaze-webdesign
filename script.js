@@ -18,6 +18,7 @@
     initMultiStepForm();
     initContactForm();
     initActiveNav();
+    updateCopyrightYear();
   });
 
   /* ----------------------------- Navigation ----------------------------- */
@@ -308,6 +309,13 @@
         }
       }, submitBtn);
     });
+  }
+
+  /* ----------------------------- Copyright Year ----------------------------- */
+  function updateCopyrightYear() {
+    var yearEls = document.querySelectorAll('.copyright-year');
+    var currentYear = new Date().getFullYear();
+    yearEls.forEach(function(el) { el.textContent = currentYear; });
   }
 
   /* ----------------------------- Formspree submit ----------------------------- */
