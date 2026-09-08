@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaze Webdesign — Moderne Websites für lokale Unternehmen in NRW</title>
+  <meta name="description" content="Kaze Webdesign gestaltet schnelle, moderne und responsive Websites für lokale Unternehmen, Dienstleister und Handwerksbetriebe in NRW. Persönlich, verständlich und ohne unnötigen technischen Ballast.">
+  <meta name="author" content="Yakup Aydin">
+  <link rel="canonical" href="https://kaze-webdesign.de/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kaze Webdesign — Moderne Websites für lokale Unternehmen in NRW">
+  <meta property="og:description" content="Schnelle, moderne und responsive Websites für lokale Unternehmen in NRW. Persönlich und verständlich umgesetzt.">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:url" content="https://kaze-webdesign.de/">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 44'><path d='M16 42V14' stroke='%236B7A32' stroke-width='2.4' fill='none' stroke-linecap='round'/><path d='M16 20c-6-1-11-5-12-11 6-1 11 3 12 9z' fill='%236B7A32'/><path d='M16 28c6-1 11-5 12-11-6-1-11 3-12 9z' fill='%238B9A4A'/><circle cx='16' cy='9' r='4' fill='%236B7A32'/></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <!-- ============================ NAV ============================ -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#hero" aria-label="Kaze Webdesign — zur Startseite">
+        <svg width="30" height="42" viewBox="0 0 32 44" fill="none" aria-hidden="true" focusable="false">
+          <path d="M16 43V13" stroke="#6B7A32" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M16 21c-6.5-1-11.5-5.2-12.4-11.4C10.2 8.4 15.4 12.6 16 19.2z" fill="#6B7A32"/>
+          <path d="M16 30c6.5-1 11.5-5.2 12.4-11.4C21.8 17.4 16.6 21.6 16 27.8z" fill="#8B9A4A"/>
+          <circle cx="16" cy="8.5" r="4.2" fill="#6B7A32"/>
+        </svg>
+        <span class="brand-name">Kaze Webdesign</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Hauptnavigation">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#preise">Preise</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#ueber-mich">Über mich</a>
+        <a href="#anfrage" class="btn btn-primary">Anfrage stellen</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay" hidden></div>
+
+  <main id="main">
+    <!-- ============================ HERO ============================ -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="hero-label" id="heroLabel"><span class="dot"></span>Webdesign · Wetter (Ruhr) · NRW</span>
+          <h1>
+            <span class="line"><span class="inner">Deine Website.</span></span>
+            <span class="line"><span class="inner">Klar geplant.</span></span>
+            <span class="line"><span class="inner">Sauber umgesetzt.</span></span>
+          </h1>
+          <p class="hero-sub" id="heroSub">Ich entwickle schnelle, moderne Websites für lokale Unternehmen, Dienstleister und Handwerksbetriebe in NRW – persönlich, verständlich und ohne unnötigen technischen Ballast.</p>
+          <div class="hero-actions" id="heroActions">
+            <a href="#anfrage" class="btn btn-primary">Projekt anfragen</a>
+            <a href="#ablauf" class="btn btn-secondary">Ablauf ansehen</a>
+          </div>
+          <p class="hero-trust" id="heroTrust">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            In der Regel erhältst du innerhalb von 24 Stunden eine Rückmeldung.
+          </p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-plant-wrap">
+            <svg class="hero-plant" viewBox="0 0 300 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration einer wachsenden Pflanze als Sinnbild für kontinuierliches Wachstum">
+              <ellipse cx="165" cy="150" rx="130" ry="140" fill="#EEF2E4"/>
+              <path d="M150 400C150 400 150 300 150 250C150 190 150 120 150 70" stroke="#6B7A32" stroke-width="4.5" stroke-linecap="round"/>
+              <!-- leaves alternating -->
+              <path class="leaf-1" d="M150 250C124 244 98 224 92 190C126 190 150 214 154 246z" fill="#8B9A4A"/>
+              <path class="leaf-2" d="M150 300C180 296 210 274 218 236C182 234 154 260 150 296z" fill="#6B7A32"/>
+              <path class="leaf-3" d="M150 195C120 189 90 165 84 124C122 124 152 152 156 190z" fill="#6B7A32"/>
+              <path class="leaf-4" d="M150 240C182 236 214 212 222 170C184 170 154 198 150 236z" fill="#8B9A4A"/>
+              <path class="leaf-5" d="M150 140C124 135 100 116 95 82C126 84 150 106 154 137z" fill="#8B9A4A"/>
+              <!-- bud -->
+              <path d="M150 70C150 70 138 58 138 46C138 37 143 30 150 30C157 30 162 37 162 46C162 58 150 70 150 70z" fill="#6B7A32"/>
+              <circle cx="150" cy="40" r="6" fill="#8B9A4A"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ PROBLEM ============================ -->
+    <section id="problem">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal">Die Ausgangslage</span>
+          <h2 class="section-title reveal">Kommt dir das bekannt vor?</h2>
+          <p class="section-sub reveal">Viele lokale Unternehmen verlieren Kunden, bevor der erste Kontakt entsteht – oft aus denselben, vermeidbaren Gründen.</p>
+        </div>
+        <div class="grid-cards">
+          <article class="problem-card reveal">
+            <div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <h3>Kein digitaler Auftritt</h3>
+            <p>Ohne Website bleibst du für viele potenzielle Kunden schlicht unsichtbar.</p>
+          </article>
+          <article class="problem-card reveal">
+            <div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg></div>
+            <h3>Veralteter Auftritt</h3>
+            <p>Eine veraltete Seite wirkt schnell unprofessionell und schreckt eher ab.</p>
+          </article>
+          <article class="problem-card reveal">
+            <div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M9.5 8.5l5 5M14.5 8.5l-5 5"/></svg></div>
+            <h3>Schlecht am Smartphone</h3>
+            <p>Die meisten Besucher kommen mobil – dort muss alles einwandfrei funktionieren.</p>
+          </article>
+          <article class="problem-card reveal">
+            <div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.4L3 21l1.1-4.5A8.38 8.38 0 1 1 21 11.5z"/><path d="M12 8v4M12 15.5h.01"/></svg></div>
+            <h3>Unklare Leistungen</h3>
+            <p>Wenn nicht sofort klar wird, was du anbietest, springen Interessenten ab.</p>
+          </article>
+          <article class="problem-card reveal">
+            <div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <h3>Kontakt schwer zu finden</h3>
+            <p>Sind Telefon, E-Mail oder Adresse versteckt, geht der Erstkontakt verloren.</p>
+          </article>
+          <article class="problem-card reveal">
+            <div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <h3>Lange Ladezeiten</h3>
+            <p>Jede zusätzliche Sekunde Ladezeit kostet Besucher – und damit Aufträge.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ LEISTUNGEN ============================ -->
+    <section id="leistungen">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal">Leistungen</span>
+          <h2 class="section-title reveal">Was ich für dich umsetze</h2>
+          <p class="section-sub reveal">Von der ersten Idee bis zur laufenden Betreuung – alles aus einer Hand, klar und verständlich.</p>
+        </div>
+        <div class="grid-cards">
+          <article class="service-card reveal">
+            <div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></div>
+            <h3>Individuelles Webdesign</h3>
+            <p>Ein Design, das zu deinem Unternehmen passt – kein Baukasten von der Stange.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></div>
+            <h3>Schlanke Umsetzung</h3>
+            <p>Sauberes HTML/CSS mit modernen Animationen – schnell, leicht und wartbar.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="14" height="10" rx="1.5"/><rect x="17" y="8" width="5" height="12" rx="1.5"/><path d="M2 18h9"/></svg></div>
+            <h3>Responsive Design</h3>
+            <p>Deine Website sieht auf Smartphone, Tablet und Desktop gleichermaßen gut aus.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="5" rx="1"/><path d="M12 7v4M6 20v-4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4"/><rect x="3" y="20" width="6" height="2" rx="1"/><rect x="15" y="20" width="6" height="2" rx="1"/></svg></div>
+            <h3>Klare Struktur</h3>
+            <p>Verständliche Inhalte und eine Struktur, die Besucher gezielt zum Kontakt führt.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+            <h3>Technische SEO-Grundlagen</h3>
+            <p>Saubere Struktur, Meta-Angaben und schnelle Ladezeiten als solide Basis, um besser gefunden zu werden.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l7 3v6c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V5l7-3z"/><path d="M9.5 12l2 2 3.5-3.5"/></svg></div>
+            <h3>Hosting & Betreuung</h3>
+            <p>Auf Wunsch übernehme ich Hosting, Updates und laufende Betreuung nach Vereinbarung.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ PREISE ============================ -->
+    <section id="preise">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal">Preise</span>
+          <h2 class="section-title reveal">Transparente Preise</h2>
+          <p class="section-sub reveal">Zwei klare Pakete, keine versteckten Kosten.</p>
+        </div>
+        <div class="price-grid">
+          <article class="price-card reveal">
+            <h3 class="price-name">Starter</h3>
+            <div class="price-tag"><span class="amount">690 €</span></div>
+            <p class="price-note">einmalig</p>
+            <ul class="price-features">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Bis zu 4 Unterseiten</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Individuelle Gestaltung im Corporate Design</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Vollständig responsive (Smartphone & Tablet)</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Kontaktformular & Social-Media-Links</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Impressum & Datenschutzerklärung</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>SEO-optimiert für bessere Sichtbarkeit</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Upload auf deinen Server</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>1 Korrekturschleife inklusive</li>
+            </ul>
+            <a href="#anfrage" class="btn btn-secondary btn-block">Projekt anfragen</a>
+          </article>
+
+          <article class="price-card price-card--featured reveal">
+            <span class="price-badge">Empfohlen</span>
+            <h3 class="price-name">Rundum-Sorglos</h3>
+            <div class="price-tag"><span class="amount">490 €</span></div>
+            <p class="price-note">einmalig, zzgl. 39 €/Monat</p>
+            <ul class="price-features">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Bis zu 5 Unterseiten inklusive</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Individuelles Design & voll responsive</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Hosting, Domain- & E-Mail-Einrichtung</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Impressum & Datenschutzerklärung</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>SEO-optimiert für bessere Sichtbarkeit</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Laufende Sicherheitsupdates & Backups</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Kleine Inhaltsanpassungen (bis zu 30 Min./Monat)</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Priorisierter Ansprechpartner</li>
+            </ul>
+            <a href="#anfrage" class="btn btn-primary btn-block">Projekt anfragen</a>
+          </article>
+        </div>
+
+        <!-- Add-ons -->
+        <div class="addons-section reveal">
+          <h3 class="addons-title">Zubuchbare Extras</h3>
+          <p class="addons-intro">Erweitere dein Paket nach Bedarf mit diesen Zusatzleistungen:</p>
+          <div class="addons-grid">
+            <article class="addon-card">
+              <div class="addon-header">
+                <div class="icon-badge">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <path d="M14 2v6h6"/>
+                    <path d="M12 18v-6"/>
+                    <path d="M9 15h6"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="addon-name">Zusätzliche Unterseite</h4>
+                  <p class="addon-price">120 € <span class="price-suffix">einmalig</span></p>
+                </div>
+              </div>
+              <p class="addon-desc">Erstellung einer weiteren Unterseite im bestehenden Layout deiner Website.</p>
+            </article>
+            <article class="addon-card">
+              <div class="addon-header">
+                <div class="icon-badge">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="6" width="20" height="12" rx="2"/>
+                    <path d="M7 10h.01"/>
+                    <path d="M11 10h6"/>
+                    <path d="M7 14h.01"/>
+                    <path d="M11 14h6"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="addon-name">Erweitertes Formular</h4>
+                  <p class="addon-price">150 € <span class="price-suffix">einmalig</span></p>
+                </div>
+              </div>
+              <p class="addon-desc">Mehrstufige Formulare, Buchungs-Tools oder Terminkalender-Anbindung für erweiterte Funktionen.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="price-fine reveal">
+          <p>Alle angegebenen Preise sind Endpreise. 50 % Anzahlung bei Auftragserteilung, 50 % bei Fertigstellung.</p>
+          <p>Das Rundum-Sorglos-Paket hat eine Mindestvertragslaufzeit von 12 Monaten (danach monatlich kündbar).</p>
+          <p>Gemäß § 19 UStG wird keine Umsatzsteuer berechnet und ausgewiesen.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ ABLAUF ============================ -->
+    <section id="ablauf">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal">Ablauf</span>
+          <h2 class="section-title reveal">So läuft unser Projekt ab</h2>
+          <p class="section-sub reveal">Ein klarer, nachvollziehbarer Weg – Schritt für Schritt, ganz ohne Fachjargon.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-step reveal"><div class="step-num">1</div><div class="timeline-body"><h3>Anfrage</h3><p>Du füllst den Fragebogen aus oder schreibst mir direkt.</p></div></div>
+          <div class="timeline-step reveal"><div class="step-num">2</div><div class="timeline-body"><h3>Kennenlernen & Zielklärung</h3><p>Wir sprechen kurz über dein Vorhaben und klären alle offenen Punkte.</p></div></div>
+          <div class="timeline-step reveal"><div class="step-num">3</div><div class="timeline-body"><h3>Individuelles Angebot</h3><p>Du erhältst ein klares, verständliches Angebot ohne Agentur-Jargon.</p></div></div>
+          <div class="timeline-step reveal"><div class="step-num">4</div><div class="timeline-body"><h3>Anzahlung & Planung</h3><p>Nach Beauftragung legen wir gemeinsam den Fahrplan fest.</p></div></div>
+          <div class="timeline-step reveal"><div class="step-num">5</div><div class="timeline-body"><h3>Design & Umsetzung</h3><p>Ich arbeite strukturiert und halte dich auf dem Laufenden.</p></div></div>
+          <div class="timeline-step reveal"><div class="step-num">6</div><div class="timeline-body"><h3>Korrektur & Freigabe</h3><p>Du prüfst das Ergebnis, wir passen an – du gibst grünes Licht.</p></div></div>
+          <div class="timeline-step reveal"><div class="step-num">7</div><div class="timeline-body"><h3>Veröffentlichung & optionale Betreuung</h3><p>Deine Website geht live, ich bleibe auf Wunsch als Ansprechpartner.</p></div></div>
+        </div>
+        <p class="timeline-hint reveal">Rückmeldung in der Regel innerhalb von 24 Stunden · Umsetzung oft innerhalb einer Woche (je nach Projektumfang)</p>
+      </div>
+    </section>
+
+    <!-- ============================ ÜBER MICH ============================ -->
+    <section id="ueber-mich">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual reveal">
+            <div class="card-frame">
+              <svg width="160" height="220" viewBox="0 0 300 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dekoratives Pflanzenmotiv">
+                <path d="M150 400V70" stroke="#6B7A32" stroke-width="4.5" stroke-linecap="round"/>
+                <path d="M150 250C124 244 98 224 92 190C126 190 150 214 154 246z" fill="#8B9A4A"/>
+                <path d="M150 300C180 296 210 274 218 236C182 234 154 260 150 296z" fill="#6B7A32"/>
+                <path d="M150 195C120 189 90 165 84 124C122 124 152 152 156 190z" fill="#6B7A32"/>
+                <path d="M150 140C124 135 100 116 95 82C126 84 150 106 154 137z" fill="#8B9A4A"/>
+                <path d="M150 70C150 70 138 58 138 46C138 37 143 30 150 30C157 30 162 37 162 46C162 58 150 70 150 70z" fill="#6B7A32"/>
+              </svg>
+            </div>
+          </div>
+          <div class="about-body reveal">
+            <span class="eyebrow">Über mich</span>
+            <h2 class="section-title">Persönlich statt anonym</h2>
+            <p>Mein Name ist <strong>Yakup Aydin</strong>. Ich beschäftige mich mit modernem, klarem Webdesign und setze Websites so um, dass sie schnell laden, gut aussehen und einfach zu verstehen sind – für dich und für deine Kunden.</p>
+            <ul class="about-list">
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Verständliche Kommunikation – kein unnötiger Fachjargon</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Schlanke, saubere technische Umsetzung</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Regionale Nähe: Wetter (Ruhr), Ennepe-Ruhr-Kreis und Umgebung</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Persönliche Betreuung – ein Ansprechpartner, keine anonyme Agentur</li>
+            </ul>
+            <div class="kaizen-note">
+              Der Name Kaze und die Gestaltung stehen sinngemäß für Entwicklung, Bewegung und kontinuierliches Wachstum – ein Gedanke, der aus der japanischen Kaizen-Philosophie stammt: Verbesserung in kleinen, konkreten Schritten. Nicht die Marke steht dabei im Vordergrund, sondern deine Website – die gemeinsam mit deinem Unternehmen klar und Schritt für Schritt weiterentwickelt wird.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ ANFRAGE ============================ -->
+    <section id="anfrage">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal">Projekt anfragen</span>
+          <h2 class="section-title reveal">Projekt anfragen</h2>
+          <p class="section-sub reveal">Beantworte ein paar kurze Fragen – ich melde mich in der Regel innerhalb von 24 Stunden bei dir.</p>
+        </div>
+
+        <div class="form-wrap reveal">
+          <div class="progress-head" id="progressHead">
+            <div class="progress-meta">
+              <span class="step-count">Schritt <span id="stepNow">1</span> von 9</span>
+              <span class="step-title" id="stepTitle">Deine Kontaktdaten</span>
+            </div>
+            <div class="progress-bar"><div class="fill" id="progressFill"></div></div>
+          </div>
+
+          <form id="anfrageForm" action="https://formspree.io/f/xvkovprk" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="Neue Projektanfrage über kaze-webdesign.de">
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <div class="form-steps" id="formSteps">
+              <!-- Step 1 -->
+              <div class="form-step active" data-step="1" data-title="Deine Kontaktdaten">
+                <div class="field-row">
+                  <div class="field">
+                    <label for="vorname">Vorname <span class="req">*</span></label>
+                    <input type="text" id="vorname" name="Vorname" required autocomplete="given-name">
+                    <p class="field-error" data-error>Bitte gib deinen Vornamen an.</p>
+                  </div>
+                  <div class="field">
+                    <label for="nachname">Nachname <span class="req">*</span></label>
+                    <input type="text" id="nachname" name="Nachname" required autocomplete="family-name">
+                    <p class="field-error" data-error>Bitte gib deinen Nachnamen an.</p>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="email">E-Mail <span class="req">*</span></label>
+                  <input type="email" id="email" name="E-Mail" required autocomplete="email">
+                  <p class="field-error" data-error>Bitte gib eine gültige E-Mail-Adresse an.</p>
+                </div>
+                <div class="field">
+                  <label for="unternehmen">Unternehmen <span class="req">*</span></label>
+                  <input type="text" id="unternehmen" name="Unternehmen" required autocomplete="organization">
+                  <p class="field-error" data-error>Bitte gib deinen Unternehmensnamen an.</p>
+                </div>
+                <div class="field">
+                  <label for="telefon">Telefon <span class="field-hint" style="display:inline;margin:0">(optional)</span></label>
+                  <input type="tel" id="telefon" name="Telefon" autocomplete="tel">
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="form-step" data-step="2" data-title="Dein Unternehmen">
+                <div class="field">
+                  <label for="taetigkeit">Was bietet dein Unternehmen an?</label>
+                  <textarea id="taetigkeit" name="Tätigkeit" placeholder="z. B. Handwerksbetrieb, Dienstleistung, Beratung..."></textarea>
+                  <p class="field-hint">Beschreibe kurz, was du oder dein Unternehmen macht.</p>
+                </div>
+                <div class="field">
+                  <label for="standort">Wo ist dein Standort oder dein Tätigkeitsbereich?</label>
+                  <input type="text" id="standort" name="Standort" placeholder="z. B. Wetter (Ruhr), Ennepe-Ruhr-Kreis, NRW">
+                  <p class="field-hint">Stadt, Region oder Einzugsgebiet, in dem du tätig bist.</p>
+                </div>
+                <div class="field">
+                  <label for="leistungen-website">Welche Leistungen oder Produkte sollen auf der Website dargestellt werden?</label>
+                  <textarea id="leistungen-website" name="Darzustellende Leistungen" placeholder="z. B. Beratung, Installation, Reparatur, Produkte..."></textarea>
+                  <p class="field-hint">Liste die wichtigsten Leistungen oder Produkte auf.</p>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div class="form-step" data-step="3" data-title="Deine Situation & Ziele">
+                <div class="field">
+                  <label>Was trifft auf deine aktuelle Situation zu? (Mehrfachauswahl möglich)</label>
+                  <div class="choice-group">
+                    <label class="choice"><input type="checkbox" name="Situation" value="Noch keine Website">Ich habe noch keine Website und möchte eine erstellen lassen</label>
+                    <label class="choice"><input type="checkbox" name="Situation" value="Website veraltet">Meine aktuelle Website ist veraltet und nicht mehr zeitgemäß</label>
+                    <label class="choice"><input type="checkbox" name="Situation" value="Am Smartphone kaum nutzbar">Meine Website funktioniert am Smartphone nicht richtig</label>
+                    <label class="choice"><input type="checkbox" name="Situation" value="Professioneller wirken">Ich möchte online professioneller auftreten</label>
+                    <label class="choice"><input type="checkbox" name="Situation" value="Leistungen klarer darstellen">Meine Leistungen und Angebote sind nicht klar erkennbar</label>
+                    <label class="choice"><input type="checkbox" name="Situation" value="Besser gefunden werden">Ich werde online kaum gefunden und brauche mehr Sichtbarkeit</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="ziel-anmerkung">Was möchtest du mit der neuen Website erreichen? <span class="field-hint" style="display:inline;margin:0">(optional)</span></label>
+                  <textarea id="ziel-anmerkung" name="Ziel – Anmerkungen" placeholder="z. B. mehr Kundenanfragen, besser gefunden werden, professioneller wirken..."></textarea>
+                </div>
+              </div>
+
+              <!-- Step 4 -->
+              <div class="form-step" data-step="4" data-title="Gewünschter Umfang">
+                <div class="field">
+                  <label>Welche Bereiche soll die Website enthalten?</label>
+                  <div class="choice-group">
+                    <label class="choice"><input type="checkbox" name="Umfang" value="Startseite">Eine ansprechende Startseite mit Überblick</label>
+                    <label class="choice"><input type="checkbox" name="Umfang" value="Über uns/mich">Ein Bereich über mein Unternehmen und mich</label>
+                    <label class="choice"><input type="checkbox" name="Umfang" value="Leistungen/Angebote">Eine Seite mit meinen Leistungen und Angeboten</label>
+                    <label class="choice"><input type="checkbox" name="Umfang" value="Preise">Eine Übersicht mit meinen Preisen</label>
+                    <label class="choice"><input type="checkbox" name="Umfang" value="Kontakt">Eine Kontaktseite mit Kontaktformular</label>
+                    <label class="choice"><input type="checkbox" name="Umfang" value="Galerie/Portfolio">Eine Galerie oder Portfolio mit meinen Arbeiten</label>
+                    <label class="choice"><input type="checkbox" name="Umfang" value="Sonstiges">Etwas ganz anderes, das ich unten angeben kann</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="umfang-sonst">Was sonst noch? <span class="field-hint" style="display:inline;margin:0">(optional)</span></label>
+                  <textarea id="umfang-sonst" name="Umfang – Sonstiges"></textarea>
+                </div>
+              </div>
+
+              <!-- Step 5 -->
+              <div class="form-step" data-step="5" data-title="Gestaltung">
+                <div class="field">
+                  <label>Hast du bereits ein Logo für dein Unternehmen?</label>
+                  <div class="choice-group">
+                    <label class="choice"><input type="radio" name="Logo vorhanden" value="Ja">Ja, ich habe bereits ein Logo in digitaler Form</label>
+                    <label class="choice"><input type="radio" name="Logo vorhanden" value="Nein">Nein, ich benötige noch ein neues Logo</label>
+                    <label class="choice"><input type="radio" name="Logo vorhanden" value="In Planung">Ich arbeite gerade an einem Logo</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="farben">Welche Farben oder Stilrichtung wünschst du dir? <span class="field-hint" style="display:inline;margin:0">(optional)</span></label>
+                  <textarea id="farben" name="Farben / Stil" placeholder="z. B. natürlich und grün, modern und minimalistisch, klassisch..."></textarea>
+                  <p class="field-hint">Beschreibe grob, welcher Stil zu deinem Unternehmen passt.</p>
+                </div>
+                <div class="field">
+                  <label for="inspiration">Hast du Beispiel-Websites, die dir gefallen? <span class="field-hint" style="display:inline;margin:0">(optional)</span></label>
+                  <textarea id="inspiration" name="Inspiration" placeholder="z. B. www.beispiel.de – gib gerne mehrere URLs an"></textarea>
+                  <p class="field-hint">Dies dient nur als Inspiration für den Stil – nicht zum Kopieren.</p>
+                </div>
+              </div>
+
+              <!-- Step 6 -->
+              <div class="form-step" data-step="6" data-title="Inhalte & Materialien">
+                <div class="field">
+                  <label>Welche Materialien hast du bereits für die Website vorbereitet?</label>
+                  <div class="choice-group">
+                    <label class="choice"><input type="checkbox" name="Materialien" value="Texte vorhanden">Ich habe bereits fertige Texte für die Website</label>
+                    <label class="choice"><input type="checkbox" name="Materialien" value="Bilder/Fotos vorhanden">Ich habe eigene Bilder und Fotos für die Website</label>
+                    <label class="choice"><input type="checkbox" name="Materialien" value="Logo-Datei vorhanden">Ich habe mein Logo in digitaler Form (z. B. PNG, SVG)</label>
+                    <label class="choice"><input type="checkbox" name="Materialien" value="Öffnungszeiten/Preisliste">Ich habe Öffnungszeiten und Preislisten fertig</label>
+                    <label class="choice"><input type="checkbox" name="Materialien" value="Nichts davon vorhanden">Ich habe noch nichts davon vorbereitet</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="funktionen">Brauchst du besondere Funktionen auf der Website? <span class="field-hint" style="display:inline;margin:0">(optional)</span></label>
+                  <textarea id="funktionen" name="Besondere Funktionen" placeholder="z. B. Google Maps Karte, Kontaktformular, Online-Terminbuchung, Bildergalerie..."></textarea>
+                  <p class="field-hint">Liste spezielle Funktionen auf, die dir wichtig sind.</p>
+                </div>
+              </div>
+
+              <!-- Step 7 -->
+              <div class="form-step" data-step="7" data-title="Hosting & Betreuung">
+                <div class="field">
+                  <label>Wie sieht es mit Hosting aus?</label>
+                  <div class="choice-group">
+                    <label class="choice"><input type="radio" name="Hosting" value="Bereits vorhanden">Ich habe bereits einen Hosting-Provider und eine Domain</label>
+                    <label class="choice"><input type="radio" name="Hosting" value="Hosting & Domain benötigt">Ich benötige Hosting und eine neue Domain</label>
+                    <label class="choice"><input type="radio" name="Hosting" value="Rundum-Sorglos-Paket">Ich interessiere mich für dein Rundum-Sorglos-Paket</label>
+                    <label class="choice"><input type="radio" name="Hosting" value="Noch unsicher">Ich bin mir bezüglich Hosting noch nicht sicher</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 8 -->
+              <div class="form-step" data-step="8" data-title="Zeitraum">
+                <div class="field">
+                  <label>Bis wann soll die Website umgesetzt werden?</label>
+                  <div class="choice-group">
+                    <label class="choice"><input type="radio" name="Zeitraum" value="Möglichst bald">Ich benötige die Website so schnell wie möglich</label>
+                    <label class="choice"><input type="radio" name="Zeitraum" value="In den nächsten Wochen">Die Website sollte in den nächsten Wochen live gehen</label>
+                    <label class="choice"><input type="radio" name="Zeitraum" value="Noch keine feste Planung">Ich habe noch keine feste Planung für den Umfang</label>
+                    <label class="choice"><input type="radio" name="Zeitraum" value="Nur informieren">Ich möchte mich erst informieren und habe keine Eile</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 9 -->
+              <div class="form-step" data-step="9" data-title="Weitere Anmerkungen">
+                <div class="field">
+                  <label for="anmerkungen">Gibt es noch etwas Wichtiges, das ich wissen sollte? <span class="field-hint" style="display:inline;margin:0">(optional)</span></label>
+                  <textarea id="anmerkungen" name="Weitere Anmerkungen" placeholder="z. B. besondere Wünsche, spezielle Anforderungen, Budget-Vorstellungen..."></textarea>
+                  <p class="field-hint">Hier hast du Platz für alles, was in den vorherigen Schritten nicht gepasst hat.</p>
+                </div>
+                <p class="privacy-note">Mit dem Absenden stimmst du der Verarbeitung deiner Daten gemäß unserer <a href="datenschutz.html">Datenschutzerklärung</a> zu. Die Daten werden ausschließlich zur Bearbeitung deiner Anfrage genutzt.</p>
+              </div>
+            </div>
+
+            <div class="form-nav" id="formNav">
+              <button type="button" class="btn btn-ghost" id="btnBack" style="visibility:hidden">Zurück</button>
+              <span class="spacer"></span>
+              <button type="button" class="btn btn-primary" id="btnNext">Weiter</button>
+              <button type="submit" class="btn btn-primary" id="btnSubmit" style="display:none">Anfrage absenden</button>
+            </div>
+          </form>
+
+          <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+            <div class="success-icon"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></div>
+            <h3>Vielen Dank für deine Anfrage!</h3>
+            <p>Deine Nachricht ist bei mir angekommen. Ich melde mich in der Regel innerhalb von 24 Stunden persönlich bei dir zurück.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ KONTAKT ============================ -->
+    <section id="kontakt">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <span class="eyebrow">Kontakt</span>
+            <h2 class="section-title">Direkt Kontakt aufnehmen</h2>
+            <p>Lieber persönlich? Schreib mir eine kurze Nachricht oder ruf einfach an – ich freue mich, von deinem Vorhaben zu hören.</p>
+            <div class="contact-list">
+              <div class="contact-item">
+                <div class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2.5"/><path d="M3 6.5l9 6 9-6"/></svg></div>
+                <div><div class="c-label">E-Mail</div><a class="c-value" href="mailto:aydinintel@gmail.com">aydinintel@gmail.com</a></div>
+              </div>
+
+              <div class="contact-item">
+                <div class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                <div><div class="c-label">Adresse</div><span class="c-value">Nachtigallstraße 33, 58300 Wetter, Deutschland</span></div>
+              </div>
+              <div class="contact-item">
+                <div class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+                <div><div class="c-label">Region</div><span class="c-value">NRW – Wetter (Ruhr), Kreis Ennepe-Ruhr und Umgebung</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form reveal">
+            <h3>Kurze Nachricht senden</h3>
+            <p>Ich melde mich in der Regel innerhalb von 24 Stunden zurück.</p>
+            <form id="kontaktForm" action="https://formspree.io/f/xvkovprk" method="POST" novalidate>
+              <input type="hidden" name="_subject" value="Neue Kontaktnachricht über kaze-webdesign.de">
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <div class="field">
+                <label for="k-name">Name <span class="req">*</span></label>
+                <input type="text" id="k-name" name="Name" required autocomplete="name">
+                <p class="field-error" data-error>Bitte gib deinen Namen an.</p>
+              </div>
+              <div class="field">
+                <label for="k-email">E-Mail <span class="req">*</span></label>
+                <input type="email" id="k-email" name="E-Mail" required autocomplete="email">
+                <p class="field-error" data-error>Bitte gib eine gültige E-Mail-Adresse an.</p>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="k-telefon">Telefon <span class="field-hint" style="display:inline;margin:0">(optional)</span></label>
+                  <input type="tel" id="k-telefon" name="Telefon" autocomplete="tel">
+                </div>
+                <div class="field">
+                  <label for="k-unternehmen">Unternehmen <span class="field-hint" style="display:inline;margin:0">(optional)</span></label>
+                  <input type="text" id="k-unternehmen" name="Unternehmen" autocomplete="organization">
+                </div>
+              </div>
+              <div class="field">
+                <label for="k-nachricht">Nachricht <span class="req">*</span></label>
+                <textarea id="k-nachricht" name="Nachricht" required></textarea>
+                <p class="field-error" data-error>Bitte schreibe eine kurze Nachricht.</p>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Nachricht senden</button>
+              <p class="privacy-note">Mit dem Absenden stimmst du der Verarbeitung deiner Daten gemäß unserer <a href="datenschutz.html">Datenschutzerklärung</a> zu.</p>
+            </form>
+            <div class="form-success" id="kontaktSuccess" role="status" aria-live="polite">
+              <div class="success-icon"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></div>
+              <h3>Nachricht gesendet!</h3>
+              <p>Vielen Dank – ich melde mich in der Regel innerhalb von 24 Stunden bei dir.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="#hero" aria-label="Kaze Webdesign — zur Startseite">
+            <svg width="28" height="40" viewBox="0 0 32 44" fill="none" aria-hidden="true" focusable="false">
+              <path d="M16 43V13" stroke="#8B9A4A" stroke-width="2.4" stroke-linecap="round"/>
+              <path d="M16 21c-6.5-1-11.5-5.2-12.4-11.4C10.2 8.4 15.4 12.6 16 19.2z" fill="#8B9A4A"/>
+              <path d="M16 30c6.5-1 11.5-5.2 12.4-11.4C21.8 17.4 16.6 21.6 16 27.8z" fill="#6B7A32"/>
+              <circle cx="16" cy="8.5" r="4.2" fill="#8B9A4A"/>
+            </svg>
+            <span class="brand-name">Kaze Webdesign</span>
+          </a>
+          <p class="footer-about">Moderne, klare Websites für lokale Unternehmen, Dienstleister und Handwerksbetriebe in NRW – persönlich umgesetzt.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#leistungen">Leistungen</a></li>
+            <li><a href="#preise">Preise</a></li>
+            <li><a href="#ablauf">Ablauf</a></li>
+            <li><a href="#ueber-mich">Über mich</a></li>
+            <li><a href="#anfrage">Anfrage stellen</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Rechtliches & Kontakt</h4>
+          <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutzerklärung</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="mailto:aydinintel@gmail.com">aydinintel@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2025 Kaze Webdesign · Yakup Aydin · Wetter (Ruhr)</div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
